@@ -1,0 +1,8 @@
+version: '2'
+services:
+  site:
+    build: .
+    volumes:
+     - .:/code
+  redis:
+    image: "redis:alpine"
